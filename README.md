@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Before you begin, ensure you have the following tools installed on your system:
+
 - Node.js (version 14 or later)
 - npm (version 6 or later)
 
@@ -27,6 +28,7 @@ git clone https://github.com/ToolShareApp/Landing-Page.git
 ```bash
 npm install
 ```
+
 ### 3. Start the development server:
 
 ```bash
