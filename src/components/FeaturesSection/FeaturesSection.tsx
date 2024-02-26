@@ -83,7 +83,7 @@ const FeaturesSection: React.FC = () => {
   return (
     <section
       id={"features"}
-      className="features-section"
+      className="content-section features-section"
       style={{ backgroundColor: colors.primary }}
     >
       <div className="content">

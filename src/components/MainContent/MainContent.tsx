@@ -2,6 +2,8 @@ import "./MainContent.scss";
 
 import AboutImage from "../../assets/images/about.webp";
 import FeaturesSection from "../FeaturesSection/FeaturesSection.tsx";
+import HowItWorksSection from "../HowItWorksSection/HowItWorksSection.tsx";
+import DownloadSection from "../DownloadSection/DownloadSection.tsx";
 
 const MainContent: React.FC = () => {
   return (
@@ -41,24 +43,8 @@ const MainContent: React.FC = () => {
         </div>
       </section>
       <FeaturesSection />
-      <section id="how-it-works" className="content-section">
-        <div className="content">
-          {/*<img src={howItWorksImage} alt="How ToolShare works" />*/}
-          <div className="section-text">
-            <h2>How It Works</h2>
-            <p>Simple steps to start using ToolShare.</p>
-          </div>
-        </div>
-      </section>
-      <section id="download" className="content-section">
-        <div className="content">
-          {/*<img src={howItWorksImage} alt="How ToolShare works" />*/}
-          <div className="section-text">
-            <h2>Download ToolShareApp</h2>
-            <p>Simple steps to start using ToolShare.</p>
-          </div>
-        </div>
-      </section>
+      <HowItWorksSection />
+      <DownloadSection />
       {/*<section id="testimonials" className="content-section">*/}
       {/*  <div className="content">*/}
       {/*    /!*<img src={testimonialsImage} alt="User testimonials" />*!/*/}

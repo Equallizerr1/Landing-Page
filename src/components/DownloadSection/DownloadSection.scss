@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.download-section {
+  color: #fff;
+  padding: 20px;
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 20px 0;
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .accent {
+      color: $secondary;
+    }
+
+    .success {
+      color: $backdrop;
+    }
+
+    .eco {
+      color: $lightEcoBackground;
+    }
+
+    .warning {
+      color: $warning;
+    }
+
+    .primary {
+      color: $info;
+    }
+  }
+
+  .store-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    img {
+      transition: transform 0.3s ease;
+      width: 150px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

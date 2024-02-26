@@ -8,7 +8,7 @@
   padding: 100px 20px 20px;
   color: $lightEcoBackground;
   .content {
-    align-items: flex-start;
+    //align-items: flex-start;
   }
   .section-image-container {
     position: relative;
@@ -24,6 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      box-sizing: border-box;
       &.active {
         transition: all 0.3s;
         transform: scale(1);
@@ -31,8 +32,8 @@
     }
   }
   .section-image {
-    max-width: 250px;
-    margin: 70px;
+    display: block;
+    margin: auto;
   }
   .feature-item-title {
     display: flex;
@@ -48,14 +49,8 @@
     font-size: 1em;
 
     &.active {
-      font-size: 1em;
-
       h3 {
         color: $warning;
-      }
-
-      p {
-        margin: 0;
       }
     }
   }
