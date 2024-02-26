@@ -131,6 +131,27 @@
       margin-bottom: 10px;
       text-align: right;
       color: $lightText;
+      justify-content: flex-end;
+    }
+
+    li.button-menu {
+      background-color: $lightEcoBackground;
+      color: $primary;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition:
+        background-color 0.3s,
+        border 0.3s;
+      box-sizing: border-box;
+      border: 1px solid $primary;
+      width: fit-content;
+      margin-left: auto;
+
+      &:hover {
+        border-color: $lightEcoBackground;
+        background-color: $primary;
+        color: $lightText;
+      }
     }
   }
 }
