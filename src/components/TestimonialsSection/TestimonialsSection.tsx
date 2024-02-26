@@ -17,7 +17,7 @@ const TestimonialsSection: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
-    beforeChange: (current: number, next: number) => setActiveSlide(next),
+    beforeChange: (_current: number, next: number) => setActiveSlide(next),
   };
 
   return (

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./FeaturesSection.scss";
-import { SvgIconComponent } from "@mui/icons-material";
 import ShareIcon from "@mui/icons-material/Share";
 import NatureIcon from "@mui/icons-material/Nature";
 import GroupIcon from "@mui/icons-material/Group";
@@ -15,7 +14,8 @@ import WelcomeScreenImage from "../../assets/images/app-welcome-screen.png";
 interface Feature {
   title: string;
   description: string;
-  icon: React.ElementType<SvgIconComponent>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon: any;
 }
 
 const features: Feature[] = [
