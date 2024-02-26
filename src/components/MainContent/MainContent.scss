@@ -1,0 +1,134 @@
+@import "../../styles/variables";
+
+.main-content {
+  .content {
+    max-width: 1280px;
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 40px;
+    box-sizing: border-box;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $primary;
+    }
+
+    &:nth-child(odd) {
+      background-color: $lightEcoBackground;
+      h2 {
+        color: $primary;
+      }
+      p {
+        color: $text;
+      }
+      .section-text {
+        order: 1;
+      }
+      .section-image {
+        order: 2;
+        margin-left: 20px;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: $primary;
+      h2 {
+        color: $lightEcoBackground;
+      }
+      p {
+        color: $lightEcoBackground;
+      }
+      .section-text {
+        order: 2;
+        margin-left: 20px;
+      }
+      .section-image {
+        order: 1;
+      }
+    }
+
+    .section-image {
+      max-width: 30%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .section-text {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content-section,
+    .content {
+      flex-direction: column;
+      border-bottom: none;
+      flex-wrap: wrap;
+
+      .section-image,
+      .section-text {
+        max-width: 100%;
+        order: unset;
+        margin-left: 0;
+      }
+
+      .section-image {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.banner-text {
+  font-size: 1.2em;
+  p {
+    margin: 0.5em 0;
+  }
+  .highlight {
+    font-weight: bold;
+    &.primary {
+      color: $primary;
+    }
+    &.accent {
+      color: $accent;
+    }
+    &.success {
+      color: $success;
+    }
+    &.info {
+      color: $info;
+    }
+    &.warning {
+      color: $warning;
+    }
+    &.eco {
+      color: $primary;
+    }
+    &.secondary {
+      color: $secondary;
+    }
+  }
+  .extra-info {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+}
+
+#about {
+  background-color: $lightEcoBackground;
+  padding-top: 200px;
+}

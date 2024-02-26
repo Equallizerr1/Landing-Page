@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  background-color: $background;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid $primary;
+  box-shadow: 0 4px 6px rgba($primary, 0.3);
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 20px;
+  width: 100%;
+  position: relative;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .branding-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15px;
+    h1 {
+      font-size: 36px;
+    }
+    h1,
+    p {
+      margin: 0;
+      text-align: left;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+        width: 100%;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: $primary;
+      transition: all 0.3s;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        transition: all 0.3s;
+        border-color: $primary;
+      }
+    }
+    li.button-menu {
+      background-color: $primary;
+      color: $lightText;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition:
+        background-color 0.3s,
+        border 0.3s;
+      box-sizing: border-box;
+      border: 1px solid $primary;
+
+      &:hover {
+        background-color: $lightEcoBackground;
+        color: $primary;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.open ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 60px;
+    background-color: $primary;
+    box-shadow: 0 4px 6px rgba($primary, 0.3);
+    padding: 10px;
+
+    li {
+      margin-bottom: 10px;
+      text-align: right;
+      color: $lightText;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    cursor: pointer;
+  }
+}

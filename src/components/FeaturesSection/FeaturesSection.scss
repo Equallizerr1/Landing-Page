@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 20px 20px;
+  color: $lightEcoBackground;
+  .content {
+    align-items: flex-start;
+  }
+  .section-image-container {
+    position: relative;
+    .icon {
+      transform: scale(0);
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      transition: all 0.3s;
+      background-color: $lightEcoBackground;
+      border: 2px solid $warning;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+        transition: all 0.3s;
+        transform: scale(1);
+      }
+    }
+  }
+  .section-image {
+    max-width: 250px;
+    margin: 70px;
+  }
+  .feature-item-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .feature-item {
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    font-size: 1em;
+
+    &.active {
+      font-size: 1em;
+
+      h3 {
+        color: $warning;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
