@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.how-it-works-section {
+  padding: 20px;
+  background-color: #f5f5f5; // Или любой другой цвет фона, соответствующий вашему дизайну
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    svg {
+      color: $primary;
+    }
+
+    h3 {
+      margin: 0;
+      color: $darkText;
+      min-width: 200px;
+    }
+
+    p {
+      margin: 0;
+      color: $text;
+    }
+  }
+}

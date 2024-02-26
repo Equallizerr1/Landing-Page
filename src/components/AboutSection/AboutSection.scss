@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.banner-text {
+  font-size: 1.2em;
+  p {
+    margin: 0.5em 0;
+  }
+  .highlight {
+    font-weight: bold;
+    &.primary {
+      color: $primary;
+    }
+    &.accent {
+      color: $accent;
+    }
+    &.success {
+      color: $success;
+    }
+    &.info {
+      color: $info;
+    }
+    &.warning {
+      color: $warning;
+    }
+    &.eco {
+      color: $primary;
+    }
+    &.secondary {
+      color: $secondary;
+    }
+  }
+  .extra-info {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+}
+
+#about {
+  background-color: $lightEcoBackground;
+  padding-top: 200px;
+}

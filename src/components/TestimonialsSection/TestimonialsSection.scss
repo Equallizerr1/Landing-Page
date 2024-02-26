@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.testimonials-section {
+  overflow: hidden;
+  padding: 100px 15px;
+  .slick-dots {
+    bottom: -30px;
+    li button:before {
+      color: $primary;
+    }
+  }
+  .testimonial {
+    text-align: center;
+    padding: 20px;
+    .avatar {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+    }
+    .testimonial-content {
+      .testimonial-text {
+        color: $text;
+        font-size: 1.1em;
+      }
+      .testimonial-author {
+        margin-top: 20px;
+        font-weight: bold;
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 20px 20px;
+  color: $lightEcoBackground;
+  .section-image-container {
+    position: relative;
+    .icon {
+      transform: scale(0);
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+      transition: all 0.3s;
+      background-color: $lightEcoBackground;
+      border: 2px solid $warning;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      &.active {
+        transition: all 0.3s;
+        transform: scale(1);
+      }
+    }
+  }
+  .section-image {
+    display: block;
+    margin: auto;
+  }
+  .feature-item-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .feature-item {
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    font-size: 1em;
+
+    &.active {
+      h3 {
+        color: $warning;
+      }
+    }
+  }
+}
