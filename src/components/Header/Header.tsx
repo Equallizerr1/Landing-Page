@@ -31,8 +31,12 @@ const Header = () => {
         <div className="branding">
           <Logo width="80px" height="80px" />
           <div className="branding-text">
-            <h1>ToolShareApp</h1>
-            <p>Share Tools, Build Community</p>
+            <h1>
+              <span className="tool">Tool</span>
+              <span className="share">Share</span>
+              <span className="app">App</span>
+            </h1>
+            <p>Tools for Earth's Care</p>
           </div>
         </div>
         <nav className={`navigation ${isMenuOpen ? "open" : ""}`}>

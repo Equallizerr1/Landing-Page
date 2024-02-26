@@ -7,16 +7,13 @@
   justify-content: flex-start;
   padding: 100px 20px 20px;
   color: $lightEcoBackground;
-  .content {
-    //align-items: flex-start;
-  }
   .section-image-container {
     position: relative;
     .icon {
       transform: scale(0);
       position: absolute;
       bottom: 0;
-      right: 20px;
+      right: 0px;
       transition: all 0.3s;
       background-color: $lightEcoBackground;
       border: 2px solid $warning;

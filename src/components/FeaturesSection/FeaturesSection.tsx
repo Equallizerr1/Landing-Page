@@ -87,12 +87,8 @@ const FeaturesSection: React.FC = () => {
       style={{ backgroundColor: colors.primary }}
     >
       <div className="content">
-        <div className="section-image-container">
-          <img
-            src={WelcomeScreenImage}
-            alt="Features of ToolShareApp"
-            className="section-image"
-          />
+        <div className="section-image-container section-image">
+          <img src={WelcomeScreenImage} alt="Features of ToolShareApp" />
           <div className="section-image-icon">
             {features.map((feature, index) => (
               <div
