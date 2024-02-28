@@ -54,6 +54,9 @@
       .section-text {
         order: 2;
         margin-left: 20px;
+        @media (max-width: 768px) {
+          margin-left: auto;
+        }
       }
       .section-image {
         order: 1;
